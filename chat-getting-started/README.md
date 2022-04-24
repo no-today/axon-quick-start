@@ -86,7 +86,7 @@ But testing isn't the ultimate goal: we want to have an application that we can 
 Exercises
 ---------
 
-### Implement the Command Model ###
+### Implement the Command Model ###`.
 
 First of all, we're going to implement the Command Model. In this application, there is a single Aggregate: `ChatRoom`.
 This aggregate processes Commands and produces Events as a result.
@@ -94,7 +94,7 @@ This aggregate processes Commands and produces Events as a result.
 The expected behavior has been described in the `ChatRoomTest` class, using the Axon Test Fixtures.
 
 To make these tests pass, you will need to implement the following command handlers:
-1. The handler for the `CreateRoomCommand` creates a new instance of a `ChatRoom`. 
+1. The handler for the `CreateRoomCommand` creates a new instance of a `ChatRoom
    Therefore, this command handler is a constructor, instead of a regular method. 
    The method should `apply` (static method on `AggregateLifecycle`) a `RoomCreatedEvent`. 
    

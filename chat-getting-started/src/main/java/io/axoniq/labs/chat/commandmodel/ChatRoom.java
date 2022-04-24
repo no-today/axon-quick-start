@@ -79,9 +79,4 @@ public class ChatRoom {
 
         members.remove(event.getParticipant());
     }
-
-    @EventSourcingHandler
-    public void on(MessagePostedEvent event) {
-        log.info("[On-Event] MessagePostedEvent: {}", event);
-    }
 }
