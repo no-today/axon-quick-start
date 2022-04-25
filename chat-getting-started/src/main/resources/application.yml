@@ -1,0 +1,10 @@
+logging:
+  level:
+    io.axoniq.labs.chat: TRACE
+
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
